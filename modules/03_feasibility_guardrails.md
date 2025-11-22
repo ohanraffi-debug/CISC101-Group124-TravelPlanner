@@ -1,3 +1,6 @@
+Change Log (2025-11-21):
+– Added public transit accessibility check under mobility rules.
+
 **Module 3 — Feasibility & Guardrails**
 
 Apply these **if/else** checks to make sure plans are realistic and adapt to edge cases:
@@ -13,8 +16,9 @@ Apply these **if/else** checks to make sure plans are realistic and adapt to edg
 5. **Time Overrun**
   If total planned time > available hours → shorten lunch or pick a nearer stop.
 6. **Mobility Needs**
-  If mobility limits noted → choose step-free, short-walk options and include breaks.
-7. **Dietary Needs**
+   If mobility limits noted → choose step-free, short-walk options and include breaks.
+   If recommended public transit stations are not accessible (step-free or elevator available) > replace with accessible stations or suggest taxi/ride-share as an alternative.
+8. **Dietary Needs**
   If user is vegan or has dietary constraints → ensure all meals match or swap with compliant ones.
-8. **Bookings**
+9. **Bookings**
   If activity usually needs a ticket → just remind the user to book it; never simulate bookings.
